@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="t3"/>
+    <input type="text" id="t4"/>
+    <h1 id="t1">Techpile technology</h1>
+    <h1 id="t2">kamaljeet</h1>
+    <button>click Me</button>
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var x= $("#t1").text()
+                var y= $("#t2").text()
+                $("#t1").text(y)
+                $("#t2").text(x)
+            })
+        })
+    </script>
+</body>
+</html>

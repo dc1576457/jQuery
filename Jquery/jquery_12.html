@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{border:1px solid black ;min-height:350px;display:none; width:350px;padding:10PX 40px; box-sizing: border-box;margin: 5px ;  }
+
+        #p2{border:1px solid black;display:block;min-height:350px; width:350px;padding:10PX 40px; box-sizing: border-box;margin: 5px ;  }
+
+        #p3{border:1px solid black;display:none;min-height:350px; width:350px;padding:10PX 40px; box-sizing: border-box;margin: 5px ;  }
+
+        input{margin-bottom: 25px; width: 100%; height:30PX;}
+
+        p{text-align: center; font-size: 20px;}
+
+        #btn1,#btn3{border: none;background-color: transparent;transform: translateX(10vw); color: blue;cursor:pointer;}
+
+        .btn6,#btn2,#btn4{ width: 100%;height: 30px;cursor:pointer;margin-top: 25px;}
+
+        #btn5,.btn01{border: none;background-color: transparent;color:blue; margin-top: 20px;margin-left:0px ;}
+
+        #btn0{background-color: transparent; border: none;color: blue;}
+
+        .btn7{border: none;background-color: transparent;transform: translateX(10vw); color: blue;cursor:pointer;}
+
+        .main{display: inline-flex;margin: 5px auto;}
+    </style>
+</head>
+<body>
+    
+    <div id="p1">
+       
+            <p >login</p>
+            <input type="text" placeholder="Enter Email*" /><br/>
+            <input type="password" placeholder="password*" /><br/>
+            <button  id="btn1">Forget Password</button><br/>
+            <button  id="btn2">Sign In</button><br/>
+            Not a member <button class="btn01" id="btn31">Sign Up</button>
+
+         
+    </div>
+    <div id="p2">
+       
+            <p >register</p>
+            <input type="text" placeholder="Enter Name*" /><br/>
+            <input type="password" placeholder="Enter Email*" /><br/>
+            <input type="text" placeholder="Enter Password*" /><br/>
+            <input type="password" placeholder="Enter Confirm password*" /><br/>
+            <button  id="btn4">Sign In</button><br/>
+            Not a member <button class="btn3" id="btn5">Sign In</button>
+        
+    </div>
+    <div id="p3">
+        <form >
+            <p >password Forget</p>
+            <input type="text" placeholder="Enter Email*" /><br/>
+            <button class="btn6" id="btn9">Reset Password</button><br/>
+            <br/>
+            <button  id="btn31" style="color:blue;border:none;background:transparent;">Sign Up </button>
+            <button class="btn7" id="btn8">Sign In</button><br/> 
+       
+    </div>
+ 
+    <script class="imge" src="js/jquery-3.7.1.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("#btn31").click(function(){
+                $("#p1").hide(3000)
+                $("#p2").show(3000)
+                $("#p3").hide(3000)
+            })
+            $("#btn1").click(function(){
+                $("#p2").hide(3000)
+                $("#p3").show(3000)
+                $("#p1").hide(3000)
+            })
+            $("#btn1").click(function(){
+                $("#p1").hide(3000)
+                $("#p3").show(3000)
+                $("#p2").hide(3000)
+            })
+             
+            $("#btn5").click(function(){
+                $("#p2").hide(3000)
+                $("#p1").show(3000)
+                $("#p3").hide(3000)
+            })
+            $("#btn0").click(function(){
+                $("#p1").hide(3000)
+                $("#p2").show(3000)
+                $("#p3").hide(3000)
+            })
+            $("#btn8").click(function(){
+                $("#p1").hide(3000)
+                $("#p2").show(3000)
+                $("#p3").hide(3000)
+            })
+          })
+    </script>
+</body>
+</html> 

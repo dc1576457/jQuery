@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <input id="a1" type="password" placeholder="password"/><br/><br/>
+      <input id="a2" type="password"placeholder="confirm password"/><br/><br/>
+      <button>Check</button>
+      <p>Result</p>
+      <p id="p1"></p>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+         $(document).ready(function(){
+            $("button").click(function(){
+                var x =$("#a1").val()
+                var y =$("#a2").val() 
+               
+                if(x=="" && y==""){
+                    $("#p1").css({"color":"red","border":"1px solid red" ,"text-align":"center","width":"260px","height":"260px","background-image":"url(images/a.jpeg)"});
+                    $("#p1").text("Syntax Error !")
+                }
+                else if(x==y){
+                    $("#p1").css({"color":"red","border":"1px solid red" ,"text-align":"center","width":"240px","height":"240px","background-image":"url(images/download.jpeg)"});
+                    $("#p1").text("Password Matched !")
+                }
+                else{
+                    $("#p1").css({"color":"red","border":"1px solid red" ,"text-align":"center","width":"240px","height":"240px","background-image":"url(images/b.jpeg)","margin-top":"25px"});
+                    $("#p1").text("Not Matched Password !")
+                }
+            })
+         })
+    </script>
+</body>
+</html> 

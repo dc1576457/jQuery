@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="p1"><b>wel to kamaljeet</b></p>
+     <p id=p2></p>
+     <button>click me</button>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var y=$("#p1").html()
+               var x= $("#p2").html("Result "+" :"+" "+y)
+            })
+        })
+    </script>
+</body>
+</html> 

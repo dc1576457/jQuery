@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div id="w2">Techpile Technology</div>
+      <button id="b1">Set Style</button>
+
+      <div id="q1">Techpile Technology</div>
+      <button id="s"> Style</button>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+         $(document).ready(function(){
+            $("#b1").click(function(){
+                $("#w2").css("color","red")
+            })
+         })
+         $(document).ready(function(){
+            $("#s").click(function(){
+                $("#q1").css({"background-color":"aqua","text-align":"center","color":"red"})
+            })
+         })
+    </script>
+</body>
+</html> 

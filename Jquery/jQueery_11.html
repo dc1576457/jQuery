@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <img src="images/a.jpeg" id="imgae"/>
+     <button id="hide">hide</button>
+     <button id="show">show</button>
+     <button id="toggle">toggle</button>
+    <script class="imge" src="js/jquery-3.7.1.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("#hide").click(function(){
+                $("img").hide(5000)
+            })
+            $("#show").click(function(){
+                $("img").show(5000)
+            })
+            ("#toggle").click(function(){
+                $("img").toggle(5000)
+          })
+          })
+    </script>
+</body>
+</html> 

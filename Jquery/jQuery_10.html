@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            margin: 0px auto;
+            height: 500px;
+            width: 500px;
+            border: 10px groove #008000;
+            box-shadow: 0px 0px 10px 2px black inset;
+            padding: 20px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: -100%;
+        }
+
+        .imge {
+            margin-left: 0px;
+            height: 200px;
+            width: 200px;
+            border: 10px groove green;
+            box-shadow: 0px 0px 10px 2px white inset;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .head {
+            margin-left: 30%;
+        }
+
+        #box1 {
+            height: 500px;
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        #box2 {
+            height: 350px;
+            width: 300px;
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 3% auto;
+            display: none;
+        }
+
+        span {
+            padding: 20vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        <div id="box2">
+            <span> Gellery &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<b ><a href=""id="close">x</a></b></span><br /><br/>
+            <img src="" id="box3" />
+        </div>
+        <div class="head">
+            <img class="imge" src="images/a.jpeg" height="250px" />
+            <img class="imge" src="images/b.jpeg" height="250px" />
+            <img class="imge" src="images/download.jpeg" height="250px" />
+        </div>
+    </div>
+
+    <script class="imge" src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("img").click(function () {
+                $("#box2").css("display", "block")
+                var path = $(this).attr("src")
+                $("#box3").attr("src", path)
+            })
+            $("#close").click(function(){
+                $("#box2").hide(3000)
+            })
+        })
+    </script>
+</body>
+
+</html>

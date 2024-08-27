@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+     <select><option>Select </option>
+        <option>Css </option>
+        <option>HTML </option>
+        <option>Java </option>
+        <option>python with django </option>
+        <option>jQuery </option>
+    </select>
+    <input type="text"/>
+    <script class="imge" src="js/jquery-3.7.1.js"></script>
+    <script>
+          $(document).ready(function(){
+            $("select").change(function(){
+               var x = $(this).val()
+                if(x=="Css"){
+                    $("input").val(500)
+                }
+                else if(x=="HTML"){
+                    $("input").val(500)
+                }
+                else if(x=="Java"){
+                    $("input").val(1000)
+                }
+                else if(x=="python with django"){
+                    $("input").val(1000)
+                }
+                else if(x=="jQuery"){
+                    $("input").val(800)
+                }
+            })
+          })
+    </script>
+</body>
+</html> 

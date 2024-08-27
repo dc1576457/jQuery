@@ -1,0 +1,47 @@
+Function learn
+================
+
+text(), html(), attr(),CSS(),hide(),toggle(),
+fadeIn(),fadeOut(),fadeToggle(), fadeTo(),
+slideDown(), slideUp, slideToggle(),val(),
+eq,lt,gt,remove,append,prepend,after,
+removeClass(), toggleClass()
+
+
+
+ used Valu()  : it is used to get / set value of selected from control.
+ ===========
+
+ TEXT() : <h1> Techpile technology pvt. ltd.</h1> 
+ Syntax:
+        $(selector).text()
+        var x=$("h1").text()//
+
+CSS (): it is used to set single or multiple css at a time.
+
+Single CSS :  
+            $(Selector).css("propertyName","Value");
+            $("div").CSS("background","red");
+            $("div").CSS("color","yellow");
+
+Multiple CSS :
+             $(Selector).css({"propertyName":"value","propertyName":"value"})
+
+Tttr : it is used to set /get attribute value of selected HTML tag.
+
+get:
+====   $(selector).attr("attributeName")
+        var x=$(this).attr("src")//abc.jpg
+
+set
+===    $(selector).attr("attributeName","value")
+       $("img).attr("src","abc.jpg")
+
+Show() : it is used to show select html element.
+   Syntax: $("select").show(speed)
+   speed:- time in milisecond, fast, slow, medium.
+   1s = 1000 milisecond
+   Example:  $("div").show(5000)or 
+             $("div").show("fast")or 
+             $("div").show("medium")
+Toggle(): it provide the toggles between show and hide function.

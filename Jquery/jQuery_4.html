@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Username :<br/>
+    <input type="text" id="t1"/><br/>
+    Password :<br/>
+    <input type="text" id="t2"/><br/>
+    <br/>
+    <button>Save</button><br/>
+    <br/>
+
+    <span id="result">sdjkjsd</span><br/>
+    <span id="result1">sdjkjsd</span>
+    <script src="js/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var x=$("#t1").val()
+                var x=$("#t2").val()
+                $("#result").text("Username   :"+x)
+                $("#result1").text("Password   :"+y)
+            })
+        })
+    </script>
+</body>
+</html>
